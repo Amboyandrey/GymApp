@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Goal">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="236dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="616dp"
+        android:alpha=".75"
+        android:background="@drawable/circle_shape"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="292dp"
+        android:alpha=".73"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="264dp"
+        android:alpha=".70"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your Goal?"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/imageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:alpha=".1"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.098"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/imageBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:alpha=".10"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtn"
+        app:layout_constraintVertical_bias="0.195"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="199dp"
+        android:layout_height="192dp"
+        android:background="@mipmap/gainmuscle"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBtn"
+        app:layout_constraintEnd_toEndOf="@+id/imageBtn"
+        app:layout_constraintTop_toTopOf="@+id/imageBtn" />
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:background="@mipmap/loseweight"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBtn2"
+        app:layout_constraintEnd_toEndOf="@+id/imageBtn2"
+        app:layout_constraintTop_toTopOf="@+id/imageBtn2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gain Muscle"
+        android:textColor="@color/orange"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBtn"
+        app:layout_constraintVertical_bias="0.494"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lose Weight"
+        android:textColor="@color/orange"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBtn2"
+        app:layout_constraintVertical_bias="0.471"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:progress="37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

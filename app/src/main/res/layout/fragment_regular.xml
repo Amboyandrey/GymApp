@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegularFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:alpha=".95"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="REGULAR"
+        android:textColor="#003FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:elegantTextHeight="true"
+        android:textColor="?attr/colorOnPrimary"
+        android:text="\t\tRelated to your daily routine. Check it in a regular and repeated way."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+CREATE YOUR OWN"
+        android:alpha=".9"
+        android:elegantTextHeight="true"
+        android:backgroundTint="#003FFF"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:textSize="20sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OR CHOOSE FROM THESE"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regBtn" />
+
+    <ScrollView
+        android:id="@+id/scrollViewlist"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:alpha=".9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.439">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="958dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/CustomChipsStyle.2"
+                android:text="Clean as You Go"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/CustomChipsStyle.2"
+                android:text="Clean and Disinfect"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/CustomChipsStyle.2"
+                android:text="Monitor Daily Temperature"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/CustomChipsStyle.2"
+                android:text="Sleep Over 8 Hours"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/CustomChipsStyle.2"
+                android:text="Walking/Strolling"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/CustomChipsStyle.2"
+                android:text="Drink 8 Cups of Water"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/CustomChipsStyle.2"
+                android:text="Meditate"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip8"
+                style="@style/CustomChipsStyle.2"
+                android:text="Stretching"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip9"
+                style="@style/CustomChipsStyle.2"
+                android:text="Reading"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip10"
+                style="@style/CustomChipsStyle.2"
+                android:text="Practice Breathing"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip11"
+                style="@style/CustomChipsStyle.2"
+                android:text="Enjoy Outdoors"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip12"
+                style="@style/CustomChipsStyle.2"
+                android:text="Take a bath"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip13"
+                style="@style/CustomChipsStyle.2"
+                android:text="Drink Hot Milk"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip14"
+                style="@style/CustomChipsStyle.2"
+                android:text="Get Up early"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip15"
+                style="@style/CustomChipsStyle.2"
+                android:text="Warm Up"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip16"
+                style="@style/CustomChipsStyle.2"
+                android:text="Brain Dump"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip17"
+                style="@style/CustomChipsStyle.2"
+                android:text="Relax"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip18"
+                style="@style/CustomChipsStyle.2"
+                android:text="Keep A Journal"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip19"
+                style="@style/CustomChipsStyle.2"
+                android:text="Practice Hobby"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip20"
+                style="@style/CustomChipsStyle.2"
+                android:text="Fast Clean-up"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip21"
+                style="@style/CustomChipsStyle.2"
+                android:text="Laugh More"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip22"
+                style="@style/CustomChipsStyle.2"
+                android:text="Watch A Movie"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip23"
+                style="@style/CustomChipsStyle.2"
+                android:text="Clean work space"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip24"
+                style="@style/CustomChipsStyle.2"
+                android:text="Get things done"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip25"
+                style="@style/CustomChipsStyle.2"
+                android:text="Take a picture"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip26"
+                style="@style/CustomChipsStyle.2"
+                android:text="Be thankful"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip27"
+                style="@style/CustomChipsStyle.2"
+                android:text="Take your pet on a walk"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip28"
+                style="@style/CustomChipsStyle.2"
+                android:text="Bathe your Pet"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip29"
+                style="@style/CustomChipsStyle.2"
+                android:text="Prepare pet meal"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip30"
+                style="@style/CustomChipsStyle.2"
+                android:text="Home Cooking"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

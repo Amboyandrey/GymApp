@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabata"
+    android:background="?attr/colorOnSecondary">
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="236dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="608dp"
+        android:background="@drawable/circle_shape"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="292dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="628dp"
+        android:layout_marginEnd="260dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="TABATA"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:alpha=".25"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:elegantTextHeight="true"
+        android:paddingEnd="30dp"
+        android:text="Each exercise in Tabata lasts only 4x30 seconds, but it's likely to be the longest 2 minutes you've ever had."
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+        app:layout_constraintEnd_toEndOf="@+id/imageView33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:alpha=".35"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 minutes"
+        android:textColor="?attr/colorOnPrimary"
+        android:elegantTextHeight="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:elegantTextHeight="true"
+        android:paddingBottom="2dp"
+        android:alpha=".2"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150-200 calories"
+        android:textAlignment="center"
+        android:elegantTextHeight="true"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:elevation="20dp"
+        android:elegantTextHeight="true"
+        android:text="Exercise List"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:alpha=".9"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:gravity="center|start"
+                android:text="Jumping Jacks\n4 x 30 sec"
+                android:textSize="25sp"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="Planking\n4 x 25 sec"
+                android:textSize="25sp"
+                app:cornerRadius="18dp"
+                android:alpha=".9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <Button
+                android:id="@+id/btn83"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:elegantTextHeight="true"
+                android:text="REST 45 sec"
+                android:textSize="25sp"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                app:cornerRadius="18dp"
+                android:alpha=".9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="Mountain climbers\n2 x 30 sec"
+                android:textSize="25sp"
+                android:alpha=".9"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center|start"
+                android:text="air squats\n2 x 1 min"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="25sp"
+                android:alpha=".9"
+                android:layout_marginTop="5dp"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+            <Button
+                android:id="@+id/btn82"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:elegantTextHeight="true"
+                android:text="REST 45 sec"
+                android:textSize="25sp"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                app:cornerRadius="18dp"
+                android:alpha=".9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="Side planking\n2 x 30 sec"
+                android:textSize="25sp"
+                android:alpha=".9"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_marginRight="30dp"
+                android:alpha=".9"
+                android:gravity="center|start"
+                android:text="air squats\n4 x 30 sec"
+                android:textSize="25sp"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <Button
+                android:id="@+id/btn81"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:elegantTextHeight="true"
+                android:text="REST 45 sec"
+                android:textSize="25sp"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                app:cornerRadius="18dp"
+                android:alpha=".9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="Jumping Jacks\n4 x 30 sec"
+                android:textSize="25sp"
+                app:cornerRadius="18dp"
+                android:alpha=".9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="mountain climbers\n2 x 45 sec"
+                android:textSize="25sp"
+                android:alpha=".9"
+                android:textColor="?attr/colorPrimaryVariant"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

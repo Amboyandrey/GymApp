@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListWorkoutActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="236dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="616dp"
+        android:alpha=".75"
+        android:background="@drawable/circle_shape"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="292dp"
+        android:alpha=".70"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="264dp"
+        android:alpha=".73"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:elegantTextHeight="true"
+        android:paddingRight="15dp"
+        android:text="Your Workout Routine"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:id="@+id/scrollViewlist"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:alpha=".9"
+        app:layout_constraintBottom_toTopOf="@+id/beginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.439">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:paddingTop="65dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/CustomChipsStyle.2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:chipCornerRadius="20dp"
+                android:checkable="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/CustomChipsStyle.2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:chipCornerRadius="20dp"
+                android:checkable="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/CustomChipsStyle.2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:chipCornerRadius="20dp"
+                android:checkable="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/CustomChipsStyle.2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:chipCornerRadius="20dp"
+                android:checkable="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/CustomChipsStyle.2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:chipCornerRadius="20dp"
+                android:checkable="false"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/CustomChipsStyle.2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:chipCornerRadius="20dp"
+                android:checkable="false" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/beginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="72dp"
+        android:text="Let's Begin"
+        android:textSize="20sp"
+        android:alpha=".9"
+        android:elegantTextHeight="true"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:progress="87"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

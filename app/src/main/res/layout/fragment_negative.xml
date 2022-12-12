@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NegativeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:alpha=".95"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="NEGATIVE"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elegantTextHeight="true"
+        android:layout_marginBottom="6dp"
+        android:text="\t\tStart each day as complete. Only to uncheck it when you fail."
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <Button
+        android:id="@+id/negBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+CREATE YOUR OWN"
+        android:alpha=".9"
+        android:elegantTextHeight="true"
+        android:backgroundTint="#FF0000"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:textSize="20sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OR CHOOSE FROM THESE"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negBtn" />
+
+    <ScrollView
+        android:id="@+id/scrollViewlist"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:alpha=".9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.439">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/CustomChipsStyle.2"
+                android:text="Stop Eating Before Bed"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/CustomChipsStyle.2"
+                android:text="Block Screen time"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/CustomChipsStyle.2"
+                android:text="Limit Caffeine intake"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/CustomChipsStyle.2"
+                android:text="No Alcohol"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/CustomChipsStyle.2"
+                android:text="Quit Smoking"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/CustomChipsStyle.2"
+                android:text="No Excessive Game Time"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/CustomChipsStyle.2"
+                android:text="Go Sugar Free"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip8"
+                style="@style/CustomChipsStyle.2"
+                android:text="No Fried Food"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:chipCornerRadius="20dp" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

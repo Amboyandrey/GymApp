@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSched"
+    android:background="?attr/colorOnSecondary">
+
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="208dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="624dp"
+        android:alpha=".70"
+        android:background="@drawable/circle_shape"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="292dp"
+        android:alpha=".75"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="264dp"
+        android:alpha=".73"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Scheduled Habit"
+        android:textColor="?attr/colorOnPrimary"
+        android:elegantTextHeight="true"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:alpha=".7"
+        android:background="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elegantTextHeight="true"
+        android:hint="Habit Name"
+        android:textColorHint="?attr/colorOnPrimary"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_edit"
+        android:backgroundTint="#1ECC00"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scheduled Habit"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:text="WHEN"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+    <Button
+        android:id="@+id/schedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Date"
+        android:elegantTextHeight="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:backgroundTint="#1ECC00"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="14dp"
+        android:alpha=".9"
+        android:layout_marginRight="14dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="14dp"
+        android:elegantTextHeight="true"
+        android:layout_marginRight="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/schedBtn"
+        app:layout_constraintEnd_toEndOf="@+id/schedBtn"
+        app:layout_constraintTop_toTopOf="@+id/schedBtn" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:layout_marginStart="12dp"
+        android:text="DO IT AT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedBtn" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            style="@style/CustomChipsStyle.3"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:alpha=".9"
+            android:text="Anytime"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorPrimaryVariant"
+            app:chipCornerRadius="20dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/CustomChipsStyle.3"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:alpha=".9"
+            android:text="Morning"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorPrimaryVariant"
+            app:chipCornerRadius="20dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/CustomChipsStyle.3"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:text="Afternoon"
+            android:alpha=".9"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorPrimaryVariant"
+            app:chipCornerRadius="20dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/CustomChipsStyle.3"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:text="Evening"
+            android:alpha=".9"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorPrimaryVariant"
+            app:chipCornerRadius="20dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/saveHabit"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#1ECC00"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:elegantTextHeight="true"
+        android:text="Save"
+        android:textSize="20sp"
+        app:cornerRadius="18dp"
+        android:alpha=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

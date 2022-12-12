@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HabitFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:alpha=".25"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CalendarView
+            android:id="@+id/calendarToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:alpha=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="330dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="116dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Sleep Over 8 hours"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Stretching"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Clean work space"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Home Cooking"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Monitor daily temperature"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/CustomChipsStyle.1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:checked="true"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textSize="22dp"
+                app:chipCornerRadius="20dp" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/secondActivityBtn"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        app:cornerRadius="30dp"
+        android:isScrollContainer="false"
+        app:icon="@drawable/ic_baseline_add"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/colorPrimaryVariant"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="My Habit Tracker"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

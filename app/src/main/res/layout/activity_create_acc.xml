@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccActivity"
+    android:background="?attr/colorOnSecondary">
+
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="208dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="544dp"
+        android:alpha=".75"
+        android:background="@drawable/circle_shape"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginBottom="700dp"
+        android:alpha=".75"
+        android:background="@drawable/circle_shape"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="284dp"
+        android:alpha=".80"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="264dp"
+        android:alpha=".73"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+    <EditText
+        android:id="@+id/createTextPersonName1"
+        android:layout_width="272dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Create Username"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/orange"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/createTextPassword1"
+        android:layout_width="272dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/orange"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextPersonName1"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/createTextPassword2"
+        android:layout_width="272dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/orange"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextPassword1"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="CREATE ACCOUNT"
+        android:elegantTextHeight="true"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/createTextEmailAddress"
+        android:layout_width="272dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="?attr/colorOnPrimary"
+        android:textColorHint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextPassword2"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/createTextPersonName1"
+        app:layout_constraintEnd_toEndOf="@+id/createTextPersonName1"
+        app:layout_constraintTop_toTopOf="@+id/createTextPersonName1" />
+
+    <ImageView
+        android:id="@+id/visibility"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/ic_baseline_remove_red_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/createTextPassword1"
+        app:layout_constraintEnd_toEndOf="@+id/createTextPassword1"
+        app:layout_constraintTop_toTopOf="@+id/createTextPassword1" />
+
+
+    <ImageView
+        android:id="@+id/visibility2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/ic_baseline_remove_red_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/createTextPassword2"
+        app:layout_constraintEnd_toEndOf="@+id/createTextPassword1"
+        app:layout_constraintTop_toTopOf="@+id/createTextPassword2" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_baseline_emaiil"
+        app:layout_constraintBottom_toBottomOf="@+id/createTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/createTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/createTextEmailAddress" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        app:cornerRadius="18dp"
+        android:text="SIGN UP"
+        android:elegantTextHeight="true"
+        android:alpha=".9"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextEmailAddress"
+        app:layout_constraintVertical_bias="0.342"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

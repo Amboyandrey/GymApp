@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MealFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:alpha=".25"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CalendarView
+            android:id="@+id/calendarToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_gravity="center"
+        android:paddingTop="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Orientation">
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Breakfast"
+        android:elegantTextHeight="true"
+        android:alpha=".9"
+        android:textSize="35sp"
+        android:gravity="center_vertical|end"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cornerRadius="18dp"
+        android:alpha=".9"
+        android:elegantTextHeight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="\t\t\tSnacks"
+        android:textSize="35sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bp" />
+
+    <Button
+        android:id="@+id/L"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cornerRadius="18dp"
+        android:layout_marginLeft="30dp"
+        android:elegantTextHeight="true"
+        android:layout_marginRight="30dp"
+        android:alpha=".9"
+        android:text="Lunch\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        android:textSize="35sp"
+        android:gravity="center_vertical|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s" />
+
+    <Button
+        android:id="@+id/m"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:alpha=".9"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:elegantTextHeight="true"
+        android:text="Merienda\t\t\t\t"
+        android:textSize="35sp"
+        android:gravity="center_vertical|end"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/L" />
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cornerRadius="18dp"
+        android:elegantTextHeight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:alpha=".9"
+        android:text="Dinner\t\t\t\t\t\t\t\t\t\t\t"
+        android:textSize="35sp"
+        android:gravity="center_vertical|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:elevation="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@mipmap/breakfast"
+        app:layout_constraintBottom_toBottomOf="@+id/bp"
+        app:layout_constraintStart_toStartOf="@+id/bp"
+        app:layout_constraintTop_toTopOf="@+id/bp" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:elevation="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@mipmap/snacks"
+        app:layout_constraintBottom_toBottomOf="@+id/s"
+        app:layout_constraintStart_toStartOf="@+id/s"
+        app:layout_constraintTop_toTopOf="@+id/s" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@mipmap/lunch"
+        android:elevation="20dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/L"
+        app:layout_constraintStart_toStartOf="@+id/L"
+        app:layout_constraintTop_toTopOf="@+id/L" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@mipmap/merienda"
+        android:elevation="20dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/m"
+        app:layout_constraintStart_toStartOf="@+id/m"
+        app:layout_constraintTop_toTopOf="@+id/m" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@mipmap/dinner"
+        android:elevation="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/d"
+        app:layout_constraintStart_toStartOf="@+id/d"
+        app:layout_constraintTop_toTopOf="@+id/d" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?attr/colorPrimaryVariant"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Meal Plan"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="6dp"
+        android:textSize="25sp"
+        android:elegantTextHeight="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12dp"
+        android:elegantTextHeight="true"
+        android:text="cal."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

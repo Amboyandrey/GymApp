@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "876266414053",
+    "project_id": "gymhub-fitnessxhabittracker",
+    "storage_bucket": "gymhub-fitnessxhabittracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876266414053:android:f8605cd8623432f5cbd90c",
+        "android_client_info": {
+          "package_name": "com.example.gymhub_fitnessxhabittracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876266414053-uspud0q7ggqgf4pi4bpa1mq5nk5njj7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVlkP3cMigg0bkcrWG-k-zg-F1Tt2nx4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876266414053-uspud0q7ggqgf4pi4bpa1mq5nk5njj7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
